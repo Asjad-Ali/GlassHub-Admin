@@ -1,0 +1,3837 @@
+{
+	"info": {
+		"_postman_id": "6a96bfcf-862d-4be6-94e2-5b12f71b0e91",
+		"name": "Cipher Live",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Categories",
+			"item": [
+				{
+					"name": "InsertUpdate",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "Cat_id",
+									"value": "0",
+									"description": "0 For insert or ID[1 etc] for update",
+									"type": "default"
+								},
+								{
+									"key": "Cat_code",
+									"value": "CAT-2",
+									"type": "default"
+								},
+								{
+									"key": "Cat_name",
+									"value": "Category One",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/categories/InsertUpdate",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"categories",
+								"InsertUpdate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/categories/Delete/2",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"categories",
+								"Delete",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/categories/GetById/1",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"categories",
+								"GetById",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default",
+								"equals": true
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/categories/GetList/null/1/10",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"categories",
+								"GetList",
+								"null",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetFullList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/categories/GetFullList",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"categories",
+								"GetFullList"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "RegistrationSetting",
+			"item": [
+				{
+					"name": "insert Master",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "Account_type",
+									"value": "0"
+								},
+								{
+									"key": "Account_approval",
+									"value": "True"
+								},
+								{
+									"key": "Is_doc_signup",
+									"value": "True"
+								},
+								{
+									"key": "Psw_type",
+									"value": "1"
+								},
+								{
+									"key": "Psw_hint",
+									"value": "abc"
+								},
+								{
+									"key": "Psw_length",
+									"value": "12"
+								},
+								{
+									"key": "Setting_id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/RegistrationSetting/InsertUpdateSettingM",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"RegistrationSetting",
+								"InsertUpdateSettingM"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetSettingAndDocAccountBase",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjEiLCJpYXQiOjE2NDkyMzE5ODQsImV4cCI6MTY0OTMxODM4NH0.Y0GofG6rfBzIrW3Sak5qgNuiRTeE7nt-ZDgvouVXFZE",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/RegistrationSetting/GetAccountBase/0",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"RegistrationSetting",
+								"GetAccountBase",
+								"0"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Signup",
+			"item": [
+				{
+					"name": "Registration",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"Company_logo\":null,\r\n    \"auth_file_path\":null,\r\n    \"RegDocument_path\":null,\r\n    \"AddDoc_path\":null,\r\n   \"RegistrationM\": \r\n   {\r\n     \"Fullname\":\"Muhammad Afzaal\", \r\n     \"Designation\":\"Web Developer\", \r\n     \"Email\":\"afzaal@paratech.com.pk\",\r\n     \"Phone\":\"+923236752082\",\r\n     \"Password\":\"abc123\",\r\n     \"Term_accept\":true,\r\n     \"Isactive\":true,\r\n     \"Google_token\":\"token / null\",\r\n     \"Facebook_token\":\"token / null\", \r\n     \"Linkedin_token\":\"token / null\",\r\n     \"remember_token\":\"token / null\",\r\n      \"RegistrationD\": [\r\n       {\r\n           \"RegM_id\":1, \r\n           \"Account_type\":0, \r\n           \"Account_type_name\":\"Orgnisation\", \r\n           \"CR_number\":\"123\", \r\n           \"Company_name\":\"Company Name\", \r\n           \"Company_size\":\"10-50\", \r\n           \"Start_date\":\"2022-03-26\", \r\n           \"Country_id\":\"1,2,3\", \r\n           \"Head_office_address\":\"location/address\", \r\n           \"Head_office_lat\":0, \r\n           \"Head_office_long\":0, \r\n           \"Website_url\":\"www.paratech.com.pk\", \r\n           \"Social_media_url1\":null, \r\n           \"Social_media_url2\":null, \r\n           \"Social_media_url3\":null, \r\n           \"Social_media_url4\":null,\r\n           \"Social_media_url5\":null, \r\n           \"Social_media_url6\":null, \r\n           \"Account_status\":1, \r\n           \"Authorized\":false, \r\n           \"Phone_otp\":null, \r\n           \"Email_otp\":null, \r\n           \"RegD_Role\":0\r\n       }\r\n      ],\r\n      \"RegistrationCategories\": [\r\n       {\r\n           \"RegD_id\":1, \r\n           \"Cat_id\":1, \r\n           \"Cat_code\":\"CC\", \r\n           \"Cat_name\":\"Cat name\", \r\n           \"Scat_id\":1, \r\n           \"Scat_code\":\"scc\", \r\n           \"Scat_name\":\"scat name\", \r\n           \"Scat1_id\":1, \r\n           \"Scat1_code\":\"scc1\", \r\n           \"Scat1_name\":\"scat name\", \r\n           \"Scat2_id\":1, \r\n           \"Scat2_code\":\"scc2\", \r\n           \"Scat2_name\":\"scat name\", \r\n           \"Scat3_id\":\"1\", \r\n           \"Scat3_code\":\"scc3\", \r\n           \"Scat3_name\":\"scat name\", \r\n           \"Scat4_id\":null, \r\n           \"Scat4_code\":null, \r\n           \"Scat4_name\":null, \r\n           \"Scat5_id\":null, \r\n           \"Scat5_code\":null, \r\n           \"Scat5_name\":null, \r\n           \"Scat6_id\":null, \r\n           \"Scat6_code\":null, \r\n           \"Scat6_name\":null\r\n       }\r\n      ],\r\n      \"Office_Branches\": [\r\n       {\r\n           \"RegD_id\":1, \r\n           \"Office_address\":\"address\", \r\n           \"Office_lat\":0, \r\n           \"Office_long\":0\r\n       }\r\n      ],\r\n      \"RegistrationDocument\": [\r\n       {\r\n           \"RegD_id\":1, \r\n           \"Account_type\":0, \r\n           \"SettingD_id\":1\r\n       }\r\n      ],\r\n      \"AdditionalDoc\": [\r\n       {\r\n           \"RegD_id\":1, \r\n           \"Doc_name\":\"document name\"\r\n       }\r\n      ]\r\n   }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/Signup/Insert",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"Signup",
+								"Insert"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "RegD_GetAllList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/Signup/GetAllList",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"Signup",
+								"GetAllList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PendingList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/Signup/PendingList",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"Signup",
+								"PendingList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ApprovedList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/Signup/ApprovedList",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"Signup",
+								"ApprovedList"
+							],
+							"query": [
+								{
+									"key": "x-access-token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BlockedList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/Signup/BlockedList",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"Signup",
+								"BlockedList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "InprocessList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/Signup/InprocessList",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"Signup",
+								"InprocessList"
+							],
+							"query": [
+								{
+									"key": "x-access-token",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SubCategories",
+			"item": [
+				{
+					"name": "InsertUpdate",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "Cat_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "Scat_id",
+									"value": "0",
+									"type": "default"
+								},
+								{
+									"key": "Scat_code",
+									"value": "Sub-1",
+									"type": "default"
+								},
+								{
+									"key": "Scat_name",
+									"value": "subcategory",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/SubCategories/InsertUpdate",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubCategories",
+								"InsertUpdate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetFullList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/SubCategories/GetFullList",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubCategories",
+								"GetFullList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/SubCategories/GetList/null/1/10",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubCategories",
+								"GetList",
+								"null",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/SubCategories/GetById/2",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubCategories",
+								"GetById",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/SubCategories/Delete/16",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubCategories",
+								"Delete",
+								"16"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByParentID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/SubCategories/GetByParent/1",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubCategories",
+								"GetByParent",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SubCategories1",
+			"item": [
+				{
+					"name": "InsertUpdate",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "Scat1_id",
+									"value": "0",
+									"type": "default"
+								},
+								{
+									"key": "Cat_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "Scat_id",
+									"value": "2",
+									"type": "default"
+								},
+								{
+									"key": "Scat1_code",
+									"value": "Sub-11",
+									"type": "default"
+								},
+								{
+									"key": "Scat1_name",
+									"value": "subcategory",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/SubCategories1/InsertUpdate",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubCategories1",
+								"InsertUpdate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetFullList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/SubCategories1/GetFullList",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubCategories1",
+								"GetFullList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/SubCategories1/GetById/2",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubCategories1",
+								"GetById",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/SubCategories1/GetList/null/1/10",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubCategories1",
+								"GetList",
+								"null",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/SubCategories1/Delete/3",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubCategories1",
+								"Delete",
+								"3"
+							],
+							"query": [
+								{
+									"key": "x-access-token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByParentID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/SubCategories1/GetByParent/2",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubCategories1",
+								"GetByParent",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SubCategories2",
+			"item": [
+				{
+					"name": "InsertUpdate",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "Scat2_id",
+									"value": "0",
+									"type": "default"
+								},
+								{
+									"key": "Scat1_id",
+									"value": "2",
+									"type": "default"
+								},
+								{
+									"key": "Cat_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "Scat_id",
+									"value": "2",
+									"type": "default"
+								},
+								{
+									"key": "Scat2_code",
+									"value": "Sub-22",
+									"type": "default"
+								},
+								{
+									"key": "Scat2_name",
+									"value": "subcategory22",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/SubCategories2/InsertUpdate",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubCategories2",
+								"InsertUpdate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetFullList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/SubCategories2/GetFullList",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubCategories2",
+								"GetFullList"
+							],
+							"query": [
+								{
+									"key": "x-access-token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/SubCategories2/GetById/1",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubCategories2",
+								"GetById",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/SubCategories2/GetList/null/1/10",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubCategories2",
+								"GetList",
+								"null",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/SubCategories2/Delete/12",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubCategories2",
+								"Delete",
+								"12"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByParentID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/SubCategories2/GetByParent/1",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubCategories2",
+								"GetByParent",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SubCategories3",
+			"item": [
+				{
+					"name": "InsertUpdate",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "Scat3_id",
+									"value": "0",
+									"type": "default"
+								},
+								{
+									"key": "Scat2_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "Scat1_id",
+									"value": "2",
+									"type": "default"
+								},
+								{
+									"key": "Cat_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "Scat_id",
+									"value": "2",
+									"type": "default"
+								},
+								{
+									"key": "Scat3_code",
+									"value": "Sub-33",
+									"type": "default"
+								},
+								{
+									"key": "Scat3_name",
+									"value": "subcategory33",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/SubCategories3/InsertUpdate",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubCategories3",
+								"InsertUpdate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetFullList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/SubCategories3/GetFullList",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubCategories3",
+								"GetFullList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/SubCategories3/GetById/2",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubCategories3",
+								"GetById",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/SubCategories3/GetList/null/1/10",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubCategories3",
+								"GetList",
+								"null",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/SubCategories3/Delete/12",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubCategories3",
+								"Delete",
+								"12"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByParentID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/SubCategories3/GetByParent/1",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubCategories3",
+								"GetByParent",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SubCategories4",
+			"item": [
+				{
+					"name": "InsertUpdate",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "Scat4_id",
+									"value": "0",
+									"type": "default"
+								},
+								{
+									"key": "Scat3_id",
+									"value": "2",
+									"type": "default"
+								},
+								{
+									"key": "Scat2_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "Scat1_id",
+									"value": "2",
+									"type": "default"
+								},
+								{
+									"key": "Cat_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "Scat_id",
+									"value": "2",
+									"type": "default"
+								},
+								{
+									"key": "Scat4_code",
+									"value": "Sub-44",
+									"type": "default"
+								},
+								{
+									"key": "Scat4_name",
+									"value": "subcategory44",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/SubCategories4/InsertUpdate",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubCategories4",
+								"InsertUpdate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetFullList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/SubCategories4/GetFullList",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubCategories4",
+								"GetFullList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/SubCategories4/GetById/1",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubCategories4",
+								"GetById",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/SubCategories4/GetList/null/1/10",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubCategories4",
+								"GetList",
+								"null",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/SubCategories4/Delete/12",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubCategories4",
+								"Delete",
+								"12"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByParentID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/SubCategories4/GetByParent/2",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubCategories4",
+								"GetByParent",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SubCategories5",
+			"item": [
+				{
+					"name": "InsertUpdate",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "Scat5_id",
+									"value": "0",
+									"type": "default"
+								},
+								{
+									"key": "Scat4_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "Scat3_id",
+									"value": "2",
+									"type": "default"
+								},
+								{
+									"key": "Scat2_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "Scat1_id",
+									"value": "2",
+									"type": "default"
+								},
+								{
+									"key": "Cat_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "Scat_id",
+									"value": "2",
+									"type": "default"
+								},
+								{
+									"key": "Scat5_code",
+									"value": "Sub-55",
+									"type": "default"
+								},
+								{
+									"key": "Scat5_name",
+									"value": "subcategory55",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/SubCategories5/InsertUpdate",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubCategories5",
+								"InsertUpdate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetFullList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/SubCategories5/GetFullList",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubCategories5",
+								"GetFullList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/SubCategories5/GetById/1",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubCategories5",
+								"GetById",
+								"1"
+							],
+							"query": [
+								{
+									"key": "x-access-token",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/SubCategories5/GetList/null/1/10",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubCategories5",
+								"GetList",
+								"null",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/SubCategories5/Delete/12",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubCategories5",
+								"Delete",
+								"12"
+							],
+							"query": [
+								{
+									"key": "x-access-token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByParentID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/SubCategories5/GetByParent/1",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubCategories5",
+								"GetByParent",
+								"1"
+							],
+							"query": [
+								{
+									"key": "x-access-token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SubCategories6",
+			"item": [
+				{
+					"name": "InsertUpdate",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "Scat6_id",
+									"value": "0",
+									"type": "default"
+								},
+								{
+									"key": "Scat5_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "Scat4_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "Scat3_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "Scat2_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "Scat1_id",
+									"value": "4",
+									"type": "default"
+								},
+								{
+									"key": "Cat_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "Scat_id",
+									"value": "17",
+									"type": "default"
+								},
+								{
+									"key": "Scat6_code",
+									"value": "Sub-66",
+									"type": "default"
+								},
+								{
+									"key": "Scat6_name",
+									"value": "subcategory66",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/SubCategories6/InsertUpdate",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubCategories6",
+								"InsertUpdate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetFullList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/SubCategories6/GetFullList",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubCategories6",
+								"GetFullList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/SubCategories6/GetById/2",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubCategories6",
+								"GetById",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/SubCategories6/GetList/null/1/10",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubCategories6",
+								"GetList",
+								"null",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/SubCategories6/Delete/3",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubCategories6",
+								"Delete",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByParentID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/SubCategories6/GetByParent/1",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"SubCategories6",
+								"GetByParent",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CategoriesDef",
+			"item": [
+				{
+					"name": "GetFullList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/CategoriesDef/GetFullList",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"CategoriesDef",
+								"GetFullList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "InsertUpdate",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "Catdef_id",
+									"value": "0",
+									"type": "default"
+								},
+								{
+									"key": "Cat_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "Cat_code",
+									"value": "CAT-1",
+									"type": "default"
+								},
+								{
+									"key": "Cat_name",
+									"value": "Category One",
+									"type": "default"
+								},
+								{
+									"key": "Scat_id",
+									"value": "17",
+									"type": "default"
+								},
+								{
+									"key": "Scat_code",
+									"value": "Sub",
+									"type": "default"
+								},
+								{
+									"key": "Scat_name",
+									"value": "Subcategory",
+									"type": "default"
+								},
+								{
+									"key": "Scat1_id",
+									"value": "4",
+									"type": "default"
+								},
+								{
+									"key": "Scat1_code",
+									"value": "Sub-1",
+									"type": "default"
+								},
+								{
+									"key": "Scat1_name",
+									"value": "Subcategory1",
+									"type": "default"
+								},
+								{
+									"key": "Scat2_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "Scat2_code",
+									"value": "Sub-2",
+									"type": "default"
+								},
+								{
+									"key": "Scat2_name",
+									"value": "Subcategory2",
+									"type": "default"
+								},
+								{
+									"key": "Scat3_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "Scat3_code",
+									"value": "Sub-3",
+									"type": "default"
+								},
+								{
+									"key": "Scat3_name",
+									"value": "Subcategory3",
+									"type": "default"
+								},
+								{
+									"key": "Scat4_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "Scat4_code",
+									"value": "Sub-4",
+									"type": "default"
+								},
+								{
+									"key": "Scat4_name",
+									"value": "Subcategory4",
+									"type": "default"
+								},
+								{
+									"key": "Scat5_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "Scat5_code",
+									"value": "Sub-5",
+									"type": "default"
+								},
+								{
+									"key": "Scat5_name",
+									"value": "Subcategory5",
+									"type": "default"
+								},
+								{
+									"key": "Scat6_id",
+									"value": "2",
+									"type": "default"
+								},
+								{
+									"key": "Scat6_code",
+									"value": "Sub-6",
+									"type": "default"
+								},
+								{
+									"key": "Scat6_name",
+									"value": "Subcategory6",
+									"type": "default"
+								},
+								{
+									"key": "Catdef_date",
+									"value": "'2022-03-26'",
+									"type": "default"
+								},
+								{
+									"key": "Is_active",
+									"value": "true",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/CategoriesDef/InsertUpdate",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"CategoriesDef",
+								"InsertUpdate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/CategoriesDef/GetById/1",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"CategoriesDef",
+								"GetById",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/CategoriesDef/Delete/2",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"CategoriesDef",
+								"Delete",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/CategoriesDef/GetList/null/1/10",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"CategoriesDef",
+								"GetList",
+								"null",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "RegistrationM",
+			"item": [
+				{
+					"name": "GetList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/RegistrationM/GetList/null/1/10",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"RegistrationM",
+								"GetList",
+								"null",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetFullList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/RegistrationM/GetFullList",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"RegistrationM",
+								"GetFullList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/RegistrationM/GetById/1",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"RegistrationM",
+								"GetById",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Role",
+			"item": [
+				{
+					"name": "GetFullList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/Roles/GetFullList",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"Roles",
+								"GetFullList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "InsertUpdate",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "Role_id",
+									"value": "0",
+									"type": "default"
+								},
+								{
+									"key": "Role_name",
+									"value": "user",
+									"type": "default"
+								},
+								{
+									"key": "Isactive",
+									"value": "true",
+									"type": "default"
+								},
+								{
+									"key": "Isadmin",
+									"value": "true",
+									"type": "default"
+								},
+								{
+									"key": "RegD_id",
+									"value": "0",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/Roles/InsertUpdate",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"Roles",
+								"InsertUpdate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByAdmin",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/Roles/GetByAdmin",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"Roles",
+								"GetByAdmin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByRegD_ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/Roles/GetByRegD_ID/1",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"Roles",
+								"GetByRegD_ID",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/Roles/GetById/1",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"Roles",
+								"GetById",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/Roles/GetList/null/1/10",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"Roles",
+								"GetList",
+								"null",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/Roles/Delete/0",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"Roles",
+								"Delete",
+								"0"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Fields",
+			"item": [
+				{
+					"name": "GetFullList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/Fields/GetFullList",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"Fields",
+								"GetFullList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "InsertUpdate",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "Field_id",
+									"value": "0",
+									"type": "default"
+								},
+								{
+									"key": "Field_name",
+									"value": "delete",
+									"type": "default"
+								},
+								{
+									"key": "Isactive",
+									"value": "true",
+									"type": "default"
+								},
+								{
+									"key": "Menue_id",
+									"value": "0",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/Fields/InsertUpdate",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"Fields",
+								"InsertUpdate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByMenue_ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/Fields/GetByMenue_ID/0",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"Fields",
+								"GetByMenue_ID",
+								"0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/Fields/GetById/1",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"Fields",
+								"GetById",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/Fields/GetList/null/1/10",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"Fields",
+								"GetList",
+								"null",
+								"1",
+								"10"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/Fields/Delete/2",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"Fields",
+								"Delete",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "GetFullList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/User/GetFullList",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"User",
+								"GetFullList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ActiveList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/User/ActiveList",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"User",
+								"ActiveList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeactiveList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/User/DeactiveList",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"User",
+								"DeactiveList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Logout",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/User/Logout",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"User",
+								"Logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "User_email",
+									"value": "test@paratech.com.pk",
+									"type": "default"
+								},
+								{
+									"key": "User_password",
+									"value": "test",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/User/Login",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"User",
+								"Login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Module",
+			"item": [
+				{
+					"name": "GetFullList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/Module/GetFullList",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"Module",
+								"GetFullList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "InsertUpdate",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "Module_id",
+									"value": "0",
+									"type": "default"
+								},
+								{
+									"key": "Module_name",
+									"value": "main2",
+									"type": "default"
+								},
+								{
+									"key": "Module_label",
+									"value": "child2",
+									"type": "default"
+								},
+								{
+									"key": "Module_icon",
+									"value": "icon2",
+									"type": "default"
+								},
+								{
+									"key": "Module_sorting_order",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "Isactive",
+									"value": "true",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/Module/InsertUpdate",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"Module",
+								"InsertUpdate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/Module/GetById/1",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"Module",
+								"GetById",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/Module/Delete/2",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"Module",
+								"Delete",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Menue",
+			"item": [
+				{
+					"name": "GetFullList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/Menue/GetFullList",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"Menue",
+								"GetFullList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/Menue/GetById/1",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"Menue",
+								"GetById",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/Menue/Delete/1",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"Menue",
+								"Delete",
+								"1"
+							],
+							"query": [
+								{
+									"key": "x-access-token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "MenueAccess",
+			"item": [
+				{
+					"name": "GetFullList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/MenueAccess/GetFullList",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"MenueAccess",
+								"GetFullList"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/MenueAccess/GetById/1",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"MenueAccess",
+								"GetById",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByMenue_Id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/MenueAccess/GetByMenue_Id/1",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"MenueAccess",
+								"GetByMenue_Id",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetByRole_Id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/MenueAccess/GetByRole_Id/1",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"MenueAccess",
+								"GetByRole_Id",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/MenueAccess/Delete/1",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"MenueAccess",
+								"Delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "InsertUpdate",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "Access_id",
+									"value": "0",
+									"type": "default"
+								},
+								{
+									"key": "Role_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "Menue_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "Have_access",
+									"value": "true",
+									"type": "default"
+								},
+								{
+									"key": "Created_by",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "Updated_by",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "RegM_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "RegD_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "Field_id",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/MenueAccess/InsertUpdate",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"MenueAccess",
+								"InsertUpdate"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Certificate",
+			"item": [
+				{
+					"name": "GetById",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/Certificate/GetById/1",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"Certificate",
+								"GetById",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetList",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/Certificate/GetList/1/1/1/true",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"Certificate",
+								"GetList",
+								"1",
+								"1",
+								"1",
+								"true"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/Certificate/Delete/1",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"Certificate",
+								"Delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "InsertUpdate",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-access-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjciLCJpYXQiOjE2NDg3OTI0ODQsImV4cCI6MTY0ODg3ODg4NH0.nmTArxsjsD-XDLRACuKV_z3hT4ZtKnHc07VkkQJh0YM",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "Certificate_id",
+									"value": "0",
+									"type": "default"
+								},
+								{
+									"key": "Cat_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "RegD_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "RegM_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "Authority_id",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "Certificate_name",
+									"value": "test",
+									"type": "default"
+								},
+								{
+									"key": "Ref_no",
+									"value": "T123",
+									"type": "default"
+								},
+								{
+									"key": "Issued_date",
+									"value": "2022-03-02",
+									"type": "default"
+								},
+								{
+									"key": "Issued_to",
+									"value": "test men",
+									"type": "default"
+								},
+								{
+									"key": "Validity_from",
+									"value": "2022-03-02",
+									"type": "default"
+								},
+								{
+									"key": "Validity_to",
+									"value": "2022-03-02",
+									"type": "default"
+								},
+								{
+									"key": "Lifetime_valid",
+									"value": "true",
+									"type": "default"
+								},
+								{
+									"key": "Certificate_file",
+									"value": "file string",
+									"type": "default"
+								},
+								{
+									"key": "Description",
+									"value": "description",
+									"type": "default"
+								},
+								{
+									"key": "Isactive",
+									"value": "true",
+									"type": "default"
+								},
+								{
+									"key": "Isexpire",
+									"value": "false",
+									"type": "default"
+								},
+								{
+									"key": "Verified",
+									"value": "true",
+									"type": "default"
+								},
+								{
+									"key": "Verified_by",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "Verified_status",
+									"value": "2",
+									"type": "default"
+								},
+								{
+									"key": "Verified_status_name",
+									"value": "approved",
+									"type": "default"
+								},
+								{
+									"key": "Account_type",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "Createdby",
+									"value": "1",
+									"type": "default"
+								},
+								{
+									"key": "Updatedby",
+									"value": "1",
+									"type": "default"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/Certificate/InsertUpdate",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"Certificate",
+								"InsertUpdate"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "OTP",
+			"item": [
+				{
+					"name": "SendOTP",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "UserId",
+								"value": "10",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/otp/SendOTP/:email/:phone",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"otp",
+								"SendOTP",
+								":email",
+								":phone"
+							],
+							"variable": [
+								{
+									"key": "email",
+									"value": "afzaal@paratech.com.pk",
+									"description": "email address for OTP receiving"
+								},
+								{
+									"key": "phone",
+									"value": "+923236752082",
+									"description": "phone address for OTP receiving"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "VerifyOTP",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "UserId",
+								"value": "10",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "https://cipher-live.herokuapp.com/api/otp/VerifyOTP/:email/:email_otp/:phone/:phone_otp",
+							"protocol": "https",
+							"host": [
+								"cipher-live",
+								"herokuapp",
+								"com"
+							],
+							"path": [
+								"api",
+								"otp",
+								"VerifyOTP",
+								":email",
+								":email_otp",
+								":phone",
+								":phone_otp"
+							],
+							"variable": [
+								{
+									"key": "email",
+									"value": "afzaal@paratech.com.pk",
+									"description": "email for verification"
+								},
+								{
+									"key": "email_otp",
+									"value": "hh53c3",
+									"description": "email received OTP put here"
+								},
+								{
+									"key": "phone",
+									"value": "+923236752082",
+									"description": "phone for verification"
+								},
+								{
+									"key": "phone_otp",
+									"value": "null",
+									"description": "phone received OTP put here / null"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
